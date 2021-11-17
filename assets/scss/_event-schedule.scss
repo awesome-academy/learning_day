@@ -157,6 +157,12 @@
                 }
                 & .event-content{
                     padding-left: 30px;
+
+                    & p {
+                        color: black;
+                        font-size: 20px; 
+                        display: inline;
+                    }
                     
                     @media #{$lg} {
                         padding-left: 20px;
@@ -182,6 +188,11 @@
                     & .event-meta{
                         padding-top: 10px;
                         
+                        & p {
+                            color: $body-color;
+                            display: block;
+                            font-size: 16px;
+                        }
                         & li{
                             display: inline-block;
                             padding-top: 10px;
@@ -211,13 +222,15 @@
                     }
                     
                     & .event-content{
-                        
+                        & p {
+                            color: $white;
+                        }
                         & .event-title,
                         & .text{
                             color: $white;
                         }
                         & .event-meta{
-                            & li{
+                            & li, & p{
                                 color: $white; 
                             }
                         }
